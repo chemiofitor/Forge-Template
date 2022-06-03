@@ -12,7 +12,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'idea'
 
 group = "${group}"
-version = ${minecraft_version}-${mod_version}"
+version = "${minecraft_version}-${mod_version}"
 
 java {
     archivesBaseName = "${archivesBaseName}"
@@ -81,7 +81,7 @@ jar {
     manifest {
         attributes([
                 "Specification-Title"     : "${modid}",
-                "Specification-Vendor"    : "${author}"",
+                "Specification-Vendor"    : "${author}",
                 "Specification-Version"   : "1",
                 "Implementation-Title"    : project.name,
                 "Implementation-Version"  : project.jar.archiveVersion,
